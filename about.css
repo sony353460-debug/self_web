@@ -1,0 +1,43 @@
+.introduce-title{
+    display: flex;
+    margin: 180px auto 0px auto;
+    padding-left: 150px;
+    max-width: 1200px;
+    justify-content: left;
+    gap: 50px;
+}
+.avatar{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+}
+.name{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100px;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.introduce-content{
+    display: flex;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 900px;
+    align-items: center;
+}
+.introduce-work{
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 900px;
+    justify-content: left;
+}
+.introduce-work-1{
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 900px;
+    justify-content: left;
+}
