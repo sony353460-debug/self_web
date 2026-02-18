@@ -2,12 +2,14 @@
     box-sizing: border-box; 
 }
 .main-body {
-    background-color: #54534d;
+    background-color: #73726a;
     margin: 0;
     color: aliceblue;
     max-height: 100vh;
 }
 .custom-navbar{
+    background-color: #54534d;
+    opacity: 0.4;
     position: fixed;
     top: 0;
     left: 0;

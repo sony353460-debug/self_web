@@ -3,9 +3,10 @@
 }
 
 .main-body {
-    background-color: #54534d;
+    background-image: url("./image/index_background.png");
+    background-size: cover;
     margin: 0;
-    color: aliceblue;
+    color: white;
     min-height: 100vh;
 }
 
@@ -28,13 +29,17 @@
 .container-title{
     padding-top: 20vh;
     width: 500px;
-    text-align: center;
     font-size: 70px;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
 }
 .container-content{
     width: 500px;
-    text-align: left;
     font-size: 18px;
+    font-family: 'Fredoka', sans-serif;
+    text-align: left;
 }
 .social-links{
     display: flex;
@@ -53,6 +58,7 @@
     color: #2E9AFE;
     border-radius: 50vh ;
     border: 2px solid #2E9AFE;
+    opacity: 0.6;
     transition: all 0.3s ease;
 }
 .container-link:hover{
