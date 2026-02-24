@@ -30,14 +30,17 @@
     align-items: center;
 }
 .introduce-work{
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     margin: 0px auto;
     padding: 0px;
     max-width: 900px;
     justify-content: left;
 }
 .introduce-work-1{
+    display: flex;
     margin: 0px auto;
     padding: 0px;
     max-width: 900px;
-    justify-content: left;
+    justify-content: space-between;
+
 }

@@ -1,0 +1,902 @@
+<project_structure>
+self_web/
+|-- image
+|   |-- avatar.png
+|   |-- cat_base.png
+|   |-- cat_base_body.png
+|   |-- cat_base_eyes.png
+|   |-- cat_look_down.png
+|   |-- cat_look_up.png
+|   |-- cat_petted.png
+|   |-- discord_bot.png
+|   |-- hacker.png
+|   |-- index_background.png
+|   \-- 踩地雷.png
+|-- README.md
+|-- about.css
+|-- about.html
+|-- blog.css
+|-- blog.html
+|-- cat.js
+|-- contact.html
+|-- index.css
+|-- index.html
+|-- nav.css
+|-- project.html
+\-- web_style.css
+</project_structure>
+
+<file path="about.css">
+.introduce-title{
+    display: flex;
+    margin: 180px auto 0px auto;
+    padding-left: 150px;
+    max-width: 1200px;
+    justify-content: left;
+    gap: 50px;
+}
+.avatar{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+}
+.name{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100px;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.introduce-content{
+    display: flex;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 900px;
+    align-items: center;
+}
+.introduce-work{
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 900px;
+    justify-content: left;
+}
+.introduce-work-1{
+    display: flex;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 900px;
+    justify-content: space-between;
+
+}
+</file>
+
+<file path="about.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>BoXen</title>
+</head>
+<body class="main-body">
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <div>
+                <a href="/" class="nav-name">Boxen</a>
+            </div>
+            <div class="nav-menu">
+                <a href="./about.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>about me</span>
+                </a>
+                <a href="./blog.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg>
+                    <span>blog</span>
+                </a>
+                <a href="./project.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg>
+                    <span>project</span>
+                </a>
+                <a href="./contact.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>                    
+                    <span>contact me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="introduce-title">
+        <img src="./image/avatar.png" class="avatar">
+        <p class="name">BoXen</p>
+        
+    </div>
+    <div>
+
+        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
+        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">成長歷程</h1>
+        <div class="introduce-content">
+            <p>　　畢業於台南大學附中資訊應用學程，現就讀於雲林科技大學資訊管理系一年級，從高中就開始對資訊相關的領域感興趣，嘗試接觸各種資訊領域的技術，希望可以跟各式各樣的人交流，學習不同領域的知識，並在未來朝著資訊領域發展。
+            </p>
+        </div>
+
+
+        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
+        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">如何喜歡上程式？</h1>
+        <div class="introduce-content">
+            <p>　　我在國中時有稍微接觸過程式，那時我對於這方面產生了一點興趣，但主要開始學習程式語言是我高二的時候，我就讀南大附中資訊應用學程，
+            課程的內容主要偏商但也有一點資訊相關的，我開始接觸到程式也是這時候，一開始學習到的是Python語言，老師帶著我們從基礎的語法到複
+            雜的物件導向，我也開始想往這方面發展，而到了高三選擇專題時，我選擇了遊戲程式設計專題，我們主要用Python的tkinter作為使用者介
+            面，並用自己的方式嘗試做出一款遊戲，而我選擇了踩地雷這個經典的主題，當時的我還不懂AI，所以從頭到尾都是自己寫的，為了寫出踩地
+            雷的底層邏輯，我花了一整個暑假的時間去研究怎麼寫，有時還會為了除一個錯而放棄睡眠，雖然現在回頭來看發現以前寫的根本是屎山代碼
+            ，連Github是甚麼都不知道，程式全部寫在一起用檔名做版本管理，但對我來說這是一個學習的過程，我也很感謝我高中的老師很肯定我的努
+            力，讓我覺得我的這一切的努力值得了。
+            </p>
+        </div>
+
+        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
+        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">社團經歷</h1>
+        <div class="introduce-work">
+            <div class="introduce-work-1">
+                <p>南附資研社</p>
+                <p>2024 - 2025</p>
+            </div>
+            <div class="introduce-work-1">
+                <p>2025 SCIST學員</p>
+                <p>2025 - NOW</p>
+            </div>
+            <div class="introduce-work-1">
+                <p>雲科網管小組</p>
+                <p>2025 - NOW</p>
+            </div>
+        </div>
+
+
+        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
+        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">作品</h1>
+        <div class="introduce-work">
+            <div class="introduce-work-1">
+                <p>高中專題－踩地雷</p>
+                <p>Nov,2025</p>
+            </div>
+            <div class="introduce-work-1">
+                <p>大一期末作業－記帳系統</p>
+                <p>Jan,2026</p>
+            </div>
+        </div>
+    </div>
+    <hr size="3" style="border: none;background-color: white;max-width: 900px;">
+    <div style="height: 100px;"></div>
+</body>
+</html>
+</file>
+
+<file path="blog.css">
+.blog-nav{
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    height: 50px;
+    margin: 100px auto 20px auto;
+    justify-content: space-between;
+}
+.blog-recommend{
+    display: flex;
+    max-width: 800px;
+    height: 50px;
+    gap: 30px;
+}
+.blog-recommend div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-recommend a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.blog-recommend a:hover{
+    transform: translateY(-5px);
+}
+.blog-search{
+    display: flex;
+    padding-left: 12px;
+    min-width: 400px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);        /* 毛玻璃模糊效果 */
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: left;
+    gap: 10px;
+}
+.search-icon {
+    position: relative;
+    top: 12px;
+    width: 25px;        
+    height: 25px;        
+    color: #555;       
+    stroke-width: 2px;   
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.blog-search input{
+    width: 300px;
+    border: none;
+}
+.main{
+    display: flex;
+    max-width: 1200px;
+    height: auto;
+    margin: 0px auto;
+    gap: 75px;
+}
+.post{
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in;
+}
+.post:hover{
+    transform: scale(1.05);
+}
+.post img{
+    display: flex;
+    width: 330px;
+    height: 330px;
+    margin: 10px 10px;
+    border-radius: 25px;
+    border: 1px;
+}
+.post p{
+    margin: 10px 10px;
+
+}
+
+
+</file>
+
+<file path="blog.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="blog.css">
+    <title>BoXen</title>
+</head>
+<body class="main-body">
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <div>
+                <a href="/" class="nav-name">Boxen</a>
+            </div>
+            <div class="nav-menu">
+                <a href="./about.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>about me</span>
+                </a>
+                <a href="./blog.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg>
+                    <span>blog</span>
+                </a>
+                <a href="./project.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg>
+                    <span>project</span>
+                </a>
+                <a href="./contact.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>                    
+                    <span>contact me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-nav">
+        <div>
+            <nav class="blog-recommend">
+                <div>
+                    <a href="">學校作品</a>
+                </div>
+                <div>
+                    <a href="">資安筆記</a>
+                </div>
+                <div>
+                    <a href="">網頁設計</a>
+                </div>
+                <div>
+                    <a href="">遊戲設計</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="blog-search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="search" placeholder="搜尋" checked>
+        </div>
+    </div>
+    <div class="main">
+        <a href="https://www.canva.com/design/DAGZJT_0Fpo/B0AhuVCuVti2CJ3uJ2Bs9w/edit?utm_content=DAGZJT_0Fpo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="post">
+            <img src="./image/踩地雷.png">
+            <p>踩地雷</p>
+        </a>
+        <a href="https://github.com/sony353460-debug/records_homework" class="post">
+            <img src="./image/discord_bot.png">
+            <p>記帳系統</p>
+        </a>
+        <a href="https://hackmd.io/@195hzBrlRKiM-hADbia-pA/Byv2-XkwWg" class="post">
+            <img src="./image/hacker.png">
+            <p>資安筆記</p>
+        </a>
+    </div>
+
+
+</body>
+</html>
+</file>
+
+<file path="cat.js">
+document.addEventListener("DOMContentLoaded",function(){
+
+
+    window.addEventListener("mousemove",function(event){
+        const eyes = document.querySelector(".cat_base_eyes");
+
+        // 1. 取得眼珠目前在螢幕上的位置
+        const rect = eyes.getBoundingClientRect();
+        const eyeX = rect.left + rect.width / 2;
+        const eyeY = rect.top + rect.height / 2;
+
+        // 2. 計算滑鼠與眼珠中心的距離
+        const deltaX = event.clientX - eyeX;
+        const deltaY = event.clientY - eyeY;
+
+        // 3. 使用 Math.atan2 算出角度
+        const angle = Math.atan2(deltaY, deltaX);
+
+        // 4. 設定眼珠移動的最大半徑 (數值越大，眼睛動的範圍越大)
+        const maxDistance = 1; 
+
+        // 5. 計算限制後的位移量
+        const x = Math.cos(angle) * maxDistance;
+        const y = Math.sin(angle) * maxDistance;
+
+
+
+        eyes.style.transform=`translate(${x}px,${y}px)`;
+    });
+    const cat = document.querySelector(".container-cat");
+    cat.addEventListener("mouseenter",function(){
+        const body = document.querySelector(".cat_base_body");
+        const eyes = document.querySelector(".cat_base_eyes");
+        const down = document.querySelector(".cat_look_down");
+
+        body.style.opacity="0";
+        eyes.style.opacity="0";
+        down.style.opacity="1";
+    })
+
+    cat.addEventListener("mouseleave",function(){
+        const body = document.querySelector(".cat_base_body");
+        const eyes = document.querySelector(".cat_base_eyes");
+        const down = document.querySelector(".cat_look_down");
+
+        body.style.opacity="1";
+        eyes.style.opacity="1";
+        down.style.opacity="0";
+    })
+
+    cat.addEventListener("mousedown",function(){
+        const body = document.querySelector(".cat_base_body");
+        const eyes = document.querySelector(".cat_base_eyes");
+        const down = document.querySelector(".cat_look_down");
+        const petted = document.querySelector(".cat_petted");
+
+        body.style.opacity="0";
+        eyes.style.opacity="0";
+        down.style.opacity="0";
+        petted.style.opacity="1";
+    })
+
+    cat.addEventListener("mouseup",function(){
+        const body = document.querySelector(".cat_base_body");
+        const eyes = document.querySelector(".cat_base_eyes");
+        const down = document.querySelector(".cat_look_down");
+        const petted = document.querySelector(".cat_petted");
+        
+        body.style.opacity="0";
+        eyes.style.opacity="0";
+        down.style.opacity="1";
+        petted.style.opacity="0";
+    })
+});
+</file>
+
+<file path="contact.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <title>BoXen</title>
+</head>
+<body class="main-body">
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <div>
+                <a href="/" class="nav-name">Boxen</a>
+            </div>
+            <div class="nav-menu">
+                <a href="./about.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>about me</span>
+                </a>
+                <a href="./blog.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg>
+                    <span>blog</span>
+                </a>
+                <a href="./project.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg>
+                    <span>project</span>
+                </a>
+                <a href="./contact.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>                    
+                    <span>contact me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+
+
+
+        
+    </div>
+
+</body>
+</html>
+</file>
+
+<file path="index.css">
+* {
+    box-sizing: border-box; 
+}
+
+.main-body {
+    background-image: url("./image/index_background.png");
+    background-size: cover;
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    margin: 0px auto;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    max-width: 1200px;
+    min-height: calc(100vh-80px);
+    max-height: 90vh;
+    justify-content: space-between;
+}
+.container-text{
+    padding-top: 80px;
+    width: 500px;
+    height: 100vh;
+}
+.container-title{
+    padding-top: 25vh;
+    width: 500px;
+    font-size: 70px;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.container-content{
+    width: 500px;
+    font-size: 18px;
+    font-family: 'Fredoka', sans-serif;
+    color: #808080;
+    text-align: left;
+}
+.social-links{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    justify-content: left;
+    width: 500px;
+    gap: 50px;
+}
+.container-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #2E9AFE;
+    border-radius: 50vh ;
+    border: 2px solid #2E9AFE;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.container-link:hover{
+    transform: scale(1.2);
+    filter: brightness(1.3);
+    border: 3px solid #2E9AFE;
+    
+}
+.container-link svg{
+    width: 30px;
+    height: 30px;
+    stroke: currentColor;
+    fill: none;
+}
+.container-cat{
+    position: relative;
+    display: flex;
+    width: 45vh;
+    height: 45vh;
+    margin-top: 30vh;
+    margin-right: 5vh;
+    opacity: 1;
+}
+.cat_base_body{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    opacity: 1;
+}
+.cat_base_eyes{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    opacity: 1;
+    pointer-events: none;
+    transition: transform 0s ease;
+}
+.cat_look_down{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0s ease;
+}
+.cat_petted{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0s ease;
+}
+
+</file>
+
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="cat.js"></script>
+    <title>BoXen</title>
+</head>
+<body class="main-body">
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <div>
+                <a href="/" class="nav-name">Boxen</a>
+            </div>
+            <div class="nav-menu">
+                <a href="./about.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>about me</span>
+                </a>
+                <a href="./blog.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg>
+                    <span>blog</span>
+                </a>
+                <a href="./project.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg>
+                    <span>project</span>
+                </a>
+                <a href="./contact.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>                    
+                    <span>contact me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="container-text">
+            <div class="container-title">
+                BOXEN
+            </div>
+            <div class="container-content">
+                目前就讀<span style="color: cadetblue;">雲林科技大學資管系</span>一年級，<br>對資訊領域有興趣，目前有接觸資安、遊戲設計、網頁設計，<br>正在累積經驗以及紀錄學習過程。 
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/wbx_.0709/" class="container-link" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        <circle cx="18" cy="6" r="1.2" fill="currentColor" stroke="none"></circle>
+                    </svg>
+                </a>
+                <a href="https://github.com/" class="container-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"></path>
+                    </svg>
+                </a>
+                <a href="https://discordapp.com/users/874302181589798932" class="container-link" aria-label="Discord">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.6853-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4622-.636.8733-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419z"></path>
+                    </svg>
+                </a>
+                <a href="mailto:sony353460@gmail.com" class="container-link" aria-label="Gmail">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container-cat">
+            <img src="./image/cat_base_body.png" class="cat_base_body">
+            <img src="./image/cat_base_eyes.png" class="cat_base_eyes">
+            <img src="./image/cat_look_down.png" class="cat_look_down">
+            <img src="./image/cat_petted.png" class="cat_petted">
+        </div>
+    </div>
+    <hr size="3" style="border: none;background-color: white;max-width: 1200px;">
+    
+</body>
+</html>
+</file>
+
+<file path="nav.css">
+* {
+    box-sizing: border-box; 
+}
+.main-body {
+    background-color: #73726a;
+    margin: 0;
+    color: aliceblue;
+    max-height: 100vh;
+}
+.custom-navbar{
+    background-color: #54534d;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all;
+    transition-duration: 300ms;
+}
+.nav-container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px 0px;
+}
+.nav-container div{
+    max-width: 1200px;
+}
+.nav-name{
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    color: azure;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+.nav-name:hover{
+    transform: scale(1.2);
+}
+.nav-menu{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.nav-item{
+    position: relative;
+    display: flex;
+    margin: auto;
+    padding-bottom: 5px; /* 留一點空間給底線，不要黏太緊 */
+    text-decoration: none;
+    color: azure;
+    font-size: 18px;
+    font-weight: 100;
+    gap: 8px;
+    transition:  0.3s cubic-bezier(0.34, 1.2, 0.64, 1), color 0.3s ease;
+}
+.nav-item::after{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #2E9AFE;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+}
+.nav-icon{
+    width: 20px; 
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2px; 
+    stroke-linecap: round; 
+    stroke-linejoin: round; 
+}
+.nav-item:hover{
+    transform: translateY(-5px);
+}
+.nav-item:hover::after{
+    transform: scaleY(1);
+}
+</file>
+
+<file path="project.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <title>BoXen</title>
+</head>
+<body class="main-body">
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <div>
+                <a href="/" class="nav-name">Boxen</a>
+            </div>
+            <div class="nav-menu">
+                <a href="./about.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>about me</span>
+                </a>
+                <a href="./blog.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg>
+                    <span>blog</span>
+                </a>
+                <a href="./project.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg>
+                    <span>project</span>
+                </a>
+                <a href="./contact.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>                    
+                    <span>contact me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
+</file>
+
+<file path="web_style.css">
+/* 基本設定 */
+* {
+    box-sizing: border-box; /* 讓 padding 不會撐大寬度 */
+}
+
+.main-body {
+    background-color: #54534d;
+    margin: 0;
+    color: aliceblue;
+    min-height: 100vh;
+}
+.custom-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all;
+    transition-duration: 300ms;
+}
+.nav-container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px 0px;
+}
+.nav-container div{
+    max-width: 1200px;
+}
+.nav-name{
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    color: azure;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+.nav-name:hover{
+    transform: scale(1.2);
+}
+.nav-menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-item{
+    gap: 8px;
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+    color: azure;
+    font-size: 18px;
+    font-weight: 100;
+    transition:  0.3s cubic-bezier(0.34, 1.2, 0.64, 1), color 0.3s ease;
+}
+.nav-icon{
+    width: 20px; 
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2px; 
+    stroke-linecap: round; 
+    stroke-linejoin: round; 
+}
+.nav-item:hover{
+    transform: translateY(-5px);
+
+}
+.icon{
+    stroke: currentColor;
+    transition: all 0.3s ease;
+}
+.container{
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0;
+}
+</file>
+
