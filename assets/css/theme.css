@@ -4,7 +4,11 @@
 }
 
 .custom-navbar {
-    opacity: .96;
+    opacity: 1;
+    background: rgba(17, 27, 43, .72);
+    border-bottom: 1px solid rgba(190, 220, 245, .12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 .nav-menu {
@@ -32,6 +36,36 @@
 .main-body {
     min-height: 100vh;
     max-height: none;
+    background-color: #111d2d;
+    background-image:
+        /* A sparse star field, with a few softer blue stars. */
+        radial-gradient(circle at 8% 17%, rgba(245, 251, 255, .9) 0 1px, transparent 2px),
+        radial-gradient(circle at 16% 43%, rgba(245, 251, 255, .5) 0 1px, transparent 2px),
+        radial-gradient(circle at 21% 36%, rgba(218, 243, 255, .65) 0 1px, transparent 2px),
+        radial-gradient(circle at 34% 12%, rgba(245, 251, 255, .8) 0 1px, transparent 2px),
+        radial-gradient(circle at 39% 41%, rgba(245, 251, 255, .5) 0 1px, transparent 2px),
+        radial-gradient(circle at 46% 28%, rgba(157, 224, 238, .8) 0 1.5px, transparent 3px),
+        radial-gradient(circle at 57% 9%, rgba(245, 251, 255, .7) 0 1px, transparent 2px),
+        radial-gradient(circle at 62% 37%, rgba(245, 251, 255, .55) 0 1px, transparent 2px),
+        radial-gradient(circle at 71% 19%, rgba(245, 251, 255, .9) 0 1px, transparent 2px),
+        radial-gradient(circle at 76% 32%, rgba(245, 251, 255, .55) 0 1px, transparent 2px),
+        radial-gradient(circle at 87% 12%, rgba(157, 224, 238, .8) 0 1.5px, transparent 3px),
+        radial-gradient(circle at 94% 34%, rgba(245, 251, 255, .65) 0 1px, transparent 2px),
+        radial-gradient(circle at 11% 62%, rgba(245, 251, 255, .7) 0 1px, transparent 2px),
+        radial-gradient(circle at 18% 88%, rgba(245, 251, 255, .55) 0 1px, transparent 2px),
+        radial-gradient(circle at 29% 77%, rgba(157, 224, 238, .7) 0 1.5px, transparent 3px),
+        radial-gradient(circle at 43% 58%, rgba(245, 251, 255, .75) 0 1px, transparent 2px),
+        radial-gradient(circle at 52% 91%, rgba(245, 251, 255, .5) 0 1px, transparent 2px),
+        radial-gradient(circle at 63% 73%, rgba(245, 251, 255, .85) 0 1px, transparent 2px),
+        radial-gradient(circle at 79% 54%, rgba(157, 224, 238, .7) 0 1.5px, transparent 3px),
+        radial-gradient(circle at 84% 70%, rgba(245, 251, 255, .55) 0 1px, transparent 2px),
+        radial-gradient(circle at 91% 83%, rgba(245, 251, 255, .75) 0 1px, transparent 2px),
+        radial-gradient(circle 1.8rem at 46% 28%, rgba(91, 188, 215, .1), transparent),
+        radial-gradient(circle 1.8rem at 87% 12%, rgba(91, 188, 215, .1), transparent),
+        radial-gradient(ellipse 42rem 34rem at 78% 38%, rgba(61, 167, 185, .23), transparent 72%),
+        radial-gradient(ellipse 38rem 30rem at 15% 76%, rgba(81, 115, 196, .19), transparent 74%),
+        linear-gradient(135deg, #152238 0%, #101b2b 55%, #1b2637 100%);
+    background-attachment: fixed;
 }
 
 .theme-toggle::after {
@@ -73,13 +107,26 @@ html[data-theme='light'] .theme-toggle::after {
 }
 
 html[data-theme='light'] .main-body {
-    background-color: #f5f8fc;
+    background-color: #e9f5ff;
+    background-image:
+        /* Overlapping soft shapes suggest cloud banks without a bitmap. */
+        radial-gradient(ellipse 14rem 4rem at 15% 25%, rgba(255, 255, 255, .72), transparent 78%),
+        radial-gradient(ellipse 18rem 3.5rem at 26% 28%, rgba(255, 255, 255, .58), transparent 78%),
+        radial-gradient(ellipse 12rem 3rem at 45% 16%, rgba(255, 255, 255, .54), transparent 78%),
+        radial-gradient(ellipse 13rem 3.5rem at 50% 45%, rgba(255, 255, 255, .8), transparent 78%),
+        radial-gradient(ellipse 17rem 4rem at 60% 48%, rgba(255, 255, 255, .68), transparent 78%),
+        radial-gradient(ellipse 19rem 4rem at 56% 51%, rgba(145, 198, 229, .2), transparent 80%),
+        radial-gradient(ellipse 17rem 4rem at 72% 59%, rgba(255, 255, 255, .58), transparent 78%),
+        radial-gradient(ellipse 13rem 3rem at 85% 62%, rgba(255, 255, 255, .62), transparent 78%),
+        radial-gradient(ellipse 44rem 28rem at 78% 25%, rgba(255, 255, 255, .88), transparent 72%),
+        radial-gradient(ellipse 34rem 28rem at 12% 72%, rgba(172, 218, 242, .45), transparent 75%),
+        linear-gradient(150deg, #dcefff 0%, #eef8ff 52%, #fff8ef 100%);
     color: #243348;
 }
 
 html[data-theme='light'] .custom-navbar {
-    background-color: #eaf3fc;
-    opacity: .96;
+    background: rgba(240, 249, 255, .76);
+    border-bottom-color: rgba(80, 126, 160, .18);
 }
 
 html[data-theme='light'] .nav-name,
@@ -87,8 +134,69 @@ html[data-theme='light'] .nav-item {
     color: #243348;
 }
 
-html[data-theme='light'] .home-page {
-    background-image: linear-gradient(rgba(247, 251, 255, .88), rgba(247, 251, 255, .88)), url('../images/index_background.png');
+/* Keep the home page terminal readable against the daytime sky. */
+html[data-theme='light'] .social-window {
+    background: #f9fcff;
+    border-color: #aac7dd;
+    color: #293f56;
+    box-shadow: 0 20px 45px rgba(66, 105, 139, .2);
+}
+
+html[data-theme='light'] .window-titlebar {
+    background: #e6f2fa;
+    border-bottom: 1px solid #d0e2ef;
+    color: #284c69;
+}
+
+html[data-theme='light'] .window-controls span:last-child:hover {
+    color: #fff;
+}
+
+html[data-theme='light'] .window-content .line {
+    color: #8199ac;
+}
+
+html[data-theme='light'] .social-links {
+    background: #f2f8fc;
+    color: #314a61;
+}
+
+html[data-theme='light'] .terminal-tabs {
+    background: #eaf4fa;
+    border-color: #d1e3ef;
+    color: #47647c;
+}
+
+html[data-theme='light'] .terminal-tab {
+    border-bottom-color: #3182b5;
+}
+
+html[data-theme='light'] .terminal-shell,
+html[data-theme='light'] .terminal-arrow {
+    color: #6d879b;
+}
+
+html[data-theme='light'] .terminal-path,
+html[data-theme='light'] .terminal-cursor-line {
+    color: #326b94;
+}
+
+html[data-theme='light'] .container-link {
+    color: #315d79;
+}
+
+html[data-theme='light'] .container-link:hover,
+html[data-theme='light'] .container-link:focus-visible {
+    background: #dceefa;
+    color: #174b70;
+}
+
+html[data-theme='light'] .terminal-prompt {
+    color: #188780;
+}
+
+html[data-theme='light'] .terminal-cursor {
+    background: #54768f;
 }
 
 html[data-theme='light'] .container-title {

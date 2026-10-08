@@ -50,7 +50,7 @@
 .social-window{
     position: relative;
     z-index: 5;
-    margin-top: 50px;
+    margin-top: 40px;
     width: min(420px, 100%);
     overflow: hidden;
     border: 1px solid #5c6674;
