@@ -9,6 +9,7 @@
 }
 .custom-navbar{
     background-color: #54534d;
+    font-family: system-ui, "Noto Sans TC", sans-serif;
     opacity: 0.4;
     position: fixed;
     top: 0;
