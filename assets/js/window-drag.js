@@ -2,6 +2,7 @@ const socialWindow = document.querySelector('.social-window');
 const dragHandle = socialWindow?.querySelector('.window-titlebar');
 
 if (socialWindow && dragHandle) {
+    const compactLayout = window.matchMedia('(max-width: 900px)');
     let offsetX = 0;
     let offsetY = 0;
     let startX = 0;
@@ -17,7 +18,7 @@ if (socialWindow && dragHandle) {
     const clamp = (value, min, max) => Math.min(Math.max(value, min), Math.max(min, max));
 
     dragHandle.addEventListener('pointerdown', (event) => {
-        if (event.button !== 0 || event.target.closest('.window-controls')) return;
+        if (compactLayout.matches || event.button !== 0 || event.target.closest('.window-controls')) return;
 
         startX = event.clientX;
         startY = event.clientY;
@@ -46,6 +47,12 @@ if (socialWindow && dragHandle) {
     dragHandle.addEventListener('lostpointercapture', endDrag);
 
     window.addEventListener('resize', () => {
+        if (compactLayout.matches) {
+            offsetX = 0;
+            offsetY = 0;
+            socialWindow.style.transform = '';
+            return;
+        }
         const rect = socialWindow.getBoundingClientRect();
         offsetX += clamp(0, -rect.left, window.innerWidth - rect.right);
         offsetY += clamp(0, -rect.top, window.innerHeight - dragHandle.offsetHeight - rect.top);
