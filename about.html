@@ -1,109 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <script src="assets/js/theme.js"></script>
-    <title>BoXen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="認識 BoXen：從第一個 Python 踩地雷遊戲，到持續探索程式與資訊領域的學習旅程。">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/about.js" defer></script>
+  <title>About Me · BoXen</title>
 </head>
-<body class="main-body">
-    <nav class="custom-navbar">
-        <div class="nav-container">
-            <div>
-                <a href="./index.html" class="nav-name">Boxen</a>
-            </div>
-            <div class="nav-menu">
-                <a href="./about.html" class="nav-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    <span>about me</span>
-                </a>
-                <a href="./blog.html" class="nav-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg>
-                    <span>blog</span>
-                </a>
-                <a href="./project.html" class="nav-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg>
-                    <span>project</span>
-                </a>
-                <!-- <a href="./contact.html" class="nav-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>                    
-                    <span>contact me</span>
-                </a> -->
-            </div>
-            <button class="theme-toggle" type="button" aria-label="切換為淺色模式" aria-pressed="false">
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/><circle cx="12" cy="12" r="4"/></svg>
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"/></svg>
-            </button>
-        </div>
-    </nav>
-    <div class="introduce-title">
-        <img src="./assets/images/avatar.png" class="avatar">
-        <p class="name">BoXen</p>
-        
+<body class="main-body about-body">
+  <nav class="custom-navbar" aria-label="主要導覽">
+    <div class="nav-container">
+      <a href="./index.html" class="nav-name">Boxen</a>
+      <div class="nav-menu">
+        <a href="./about.html" class="nav-item" aria-current="page"><svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>about me</span></a>
+        <a href="./blog.html" class="nav-item"><svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg><span>blog</span></a>
+        <a href="./project.html" class="nav-item"><svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg><span>project</span></a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="切換為淺色模式" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/><circle cx="12" cy="12" r="4"/></svg><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"/></svg></button>
     </div>
-    <div>
-
-        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
-        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">成長歷程</h1>
-        <div class="introduce-content">
-            <p>　　畢業於台南大學附中資訊應用學程，現就讀於雲林科技大學資訊管理系一年級，從高中就開始對資訊相關的領域感興趣，嘗試接觸各種資訊領域的技術，希望可以跟各式各樣的人交流，學習不同領域的知識，並在未來朝著資訊領域發展。
-            </p>
+  </nav>
+  <main class="about-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> HELLO, WORLD! / ABOUT ME</p>
+        <h1 id="hero-title"> <span>BoXen</span></h1>
+        <p class="hero-lead">從一款踩地雷開始，慢慢把好奇心寫成真正能用的東西。</p>
+        <p class="hero-description">目前就讀雲林科技大學資訊管理系。喜歡動手試、碰到問題就拆開研究，也期待和不同領域的人交流。</p>
+        <div class="hero-actions"><a class="primary-action" href="#journey">看看我的故事 <span aria-hidden="true">↘</span></a><a class="text-action" href="./project.html">瀏覽作品 ↗</a></div>
+      </div>
+      <div class="profile-window" aria-label="BoXen 個人檔案">
+        <div class="window-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>profile / boxen.exe</span><span aria-hidden="true">↗</span></div>
+        <div class="profile-content">
+          <div class="avatar-frame"><img src="./assets/images/avatar.png" alt="BoXen 的頭像"></div>
+          <div class="profile-meta"><span class="profile-label">USER PROFILE · ONLINE</span><strong>BoXen</strong><span>資訊管理系學生 / 開發學習中</span></div>
+          <div class="profile-tags"><span># Python</span><span># Web</span><span># 持續探索</span></div>
         </div>
+        <div class="window-footer"><span>root@boxen:~$ <b>keep_learning</b><i class="cursor" aria-hidden="true"></i></span><span>01 / 03</span></div>
+      </div>
+    </section>
 
-
-        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
-        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">如何喜歡上程式？</h1>
-        <div class="introduce-content">
-            <p>　　我在國中時有稍微接觸過程式，那時我對於這方面產生了一點興趣，但主要開始學習程式語言是我高二的時候，我就讀南大附中資訊應用學程，
-            課程的內容主要偏商但也有一點資訊相關的，我開始接觸到程式也是這時候，一開始學習到的是Python語言，老師帶著我們從基礎的語法到複
-            雜的物件導向，我也開始想往這方面發展，而到了高三選擇專題時，我選擇了遊戲程式設計專題，我們主要用Python的tkinter作為使用者介
-            面，並用自己的方式嘗試做出一款遊戲，而我選擇了踩地雷這個經典的主題，當時的我還不懂AI，所以從頭到尾都是自己寫的，為了寫出踩地
-            雷的底層邏輯，我花了一整個暑假的時間去研究怎麼寫，有時還會為了除一個錯而放棄睡眠，雖然現在回頭來看發現以前寫的根本是屎山代碼
-            ，連Github是甚麼都不知道，程式全部寫在一起用檔名做版本管理，但對我來說這是一個學習的過程，我也很感謝我高中的老師很肯定我的努
-            力，讓我覺得我的這一切的努力值得了。
-            </p>
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading"><div><p class="section-kicker">01 / MY FILES</p><h2 id="journey-title">打開資料夾，認識我。</h2></div><p>點選一個檔案，查看裡面的故事。</p></div>
+      <div class="file-explorer" aria-label="我的故事檔案總管">
+        <div class="explorer-titlebar">
+          <div class="explorer-title"><span class="folder-mark" aria-hidden="true">▰</span><strong>我的故事</strong><span class="titlebar-suffix">— File Explorer</span></div>
+          <div class="explorer-controls" aria-hidden="true"><span>─</span><span>□</span><span>×</span></div>
         </div>
-
-        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
-        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">社團經歷</h1>
-        <div class="introduce-work">
-            <div class="introduce-work-1">
-                <p>南附資研社</p>
-                <p>2024 - 2025</p>
-            </div>
-            <div class="introduce-work-1">
-                <p>2025 SCIST學員</p>
-                <p>2025 - NOW</p>
-            </div>
-            <div class="introduce-work-1">
-                <p>雲科網管小組</p>
-                <p>2025 - NOW</p>
-            </div>
+        <div class="explorer-toolbar">
+          <span class="toolbar-arrow" aria-hidden="true">←</span>
+          <span class="toolbar-arrow" aria-hidden="true">→</span>
+          <span class="toolbar-arrow" aria-hidden="true">↑</span>
+          <div class="path-bar" aria-label="目前位置"><span aria-hidden="true">⌂</span><span class="path-divider" aria-hidden="true">›</span><span>BoXen</span><span class="path-divider" aria-hidden="true">›</span><strong>about</strong></div>
+          <span class="toolbar-view" aria-hidden="true">▦</span>
         </div>
-
-
-        <hr size="5" style="border: none;background-color: #2E9AFE;margin-top: 50px;max-width: 900px;">
-        <h1 style="display: flex;margin: 0px auto;max-width: 900px;height: 75px;align-items: center;">作品</h1>
-        <div class="introduce-work">
-            <div class="introduce-work-1">
-                <p>高中專題－踩地雷</p>
-                <p>Nov,2025</p>
+        <div class="explorer-content">
+          <aside class="explorer-sidebar" aria-label="快速存取">
+            <p>QUICK ACCESS</p>
+            <span class="sidebar-current"><span aria-hidden="true">▰</span> 我的故事</span>
+            <a href="./project.html"><span aria-hidden="true">◫</span> 專案櫃</a>
+            <a href="./blog.html"><span aria-hidden="true">▤</span> 學習筆記</a>
+            <div class="sidebar-path">C:\Users\BoXen\about</div>
+          </aside>
+          <div class="explorer-main">
+            <div class="files-header"><span>名稱 <span aria-hidden="true">⌄</span></span><span>類型</span></div>
+            <div class="file-list" aria-label="故事檔案">
+              <button class="story-file" type="button" aria-controls="file-start" aria-pressed="false">
+                <span class="file-symbol file-symbol-code" aria-hidden="true">&lt;/&gt;</span><span class="file-name"><strong>first_code.py</strong><small>國中 · 好奇的開始</small></span><span class="file-type">Python 檔案</span>
+              </button>
+              <button class="story-file is-selected" type="button" aria-controls="file-game" aria-pressed="true">
+                <span class="file-symbol file-symbol-game" aria-hidden="true">✱</span><span class="file-name"><strong>minesweeper.py</strong><small>高中 · 第一個遊戲</small></span><span class="file-type">Python 專案</span>
+              </button>
+              <button class="story-file" type="button" aria-controls="file-now" aria-pressed="false">
+                <span class="file-symbol file-symbol-note" aria-hidden="true">≡</span><span class="file-name"><strong>now.md</strong><small>大學 · 持續探索</small></span><span class="file-type">Markdown 檔案</span>
+              </button>
             </div>
-            <div class="introduce-work-1">
-                <p>大一期末作業－記帳系統</p>
-                <p>Jan,2026</p>
-            </div>
+            <div class="explorer-hint"><span aria-hidden="true">✦</span> 選取檔案後，右側會顯示內容</div>
+          </div>
+          <div class="preview-area" aria-live="polite">
+            <div class="preview-chrome"><span class="preview-light" aria-hidden="true"></span><span>PREVIEW</span><span aria-hidden="true">↗</span></div>
+            <article class="file-preview" id="file-start" hidden>
+              <div class="preview-file"><span class="file-symbol file-symbol-code" aria-hidden="true">&lt;/&gt;</span><div><small>01 / THE SPARK</small><strong>first_code.py</strong></div></div>
+              <div class="code-preview" aria-label="程式碼示意"><span class="code-line"><i>01</i><span class="code-comment"># 最初的一點好奇</span></span><span class="code-line"><i>02</i><span><b>print</b>(<em>"Hello World"</em>)</span></span><span class="code-line"><i>03</i><span class="code-output">↳ Hello World</span></span></div>
+              <h3>第一次發現，原來想法可以被寫出來。</h3>
+              <p>國中時稍微接觸過程式，對這個領域產生興趣。那時還不知道自己會做什麼，但已經想繼續試試看。</p>
+            </article>
+            <article class="file-preview" id="file-game">
+              <div class="preview-file"><span class="file-symbol file-symbol-game" aria-hidden="true">✱</span><div><small>02 / FIRST BUILD</small><strong>minesweeper.py</strong></div></div>
+              <div class="preview-image"><img src="./assets/images/game.png" alt="Python Tkinter 踩地雷遊戲畫面"></div>
+              <h3>花了一個暑假，寫出自己的踩地雷。</h3>
+              <p>高二開始學 Python，高三選了遊戲程式設計專題。為了弄懂踩地雷的底層邏輯，我反覆研究、除錯，最後用 Tkinter 做出第一個遊戲。現在回頭看程式還很青澀，卻是最重要的一步。</p>
+              <a href="./project.html">查看這個作品 ↗</a>
+            </article>
+            <article class="file-preview" id="file-now" hidden>
+              <div class="preview-file"><span class="file-symbol file-symbol-note" aria-hidden="true">≡</span><div><small>03 / IN PROGRESS</small><strong>now.md</strong></div></div>
+              <div class="note-preview"><span>## 現在正在做的事</span><strong>持續探索，逐步實現想法。<i class="cursor" aria-hidden="true"></i></strong><small>STATUS: IN PROGRESS</small></div>
+              <h3>把有興趣的想法逐步實現。</h3>
+              <p>現在就讀雲科大資訊管理系，持續透過課堂、社群與自己的專案接觸不同技術。</p>
+              <a href="./project.html">看看近期作品 ↗</a>
+            </article>
+          </div>
         </div>
-    </div>
-    <hr size="3" style="border: none;background-color: white;max-width: 900px;">
-    <div style="height: 100px;"></div>
+        <div class="explorer-status"><span>3 個檔案</span><span>已選取 <strong id="selected-file-name">minesweeper.py</strong></span></div>
+      </div>
+    </section>
+
+    <section class="section explore-section" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="section-kicker">02 / EXPLORE MORE</p><h2 id="explore-title">更多關於我。</h2></div><p>點開卡片，看看經歷與作品。</p></div>
+      <div class="explore-grid">
+        <details class="explore-card">
+            <summary><span class="card-icon" aria-hidden="true">⌘</span><span class="card-heading"><small>EXPERIENCE</small><strong>社團與學習</strong><span>在不同的社群裡持續接觸資訊領域。</span></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
+            <div class="card-details">
+                <ul><li><span>2024 – 2025</span><strong>南附資研社</strong></li>
+                    <li><span>2025 </span><strong>SCIST 學員</strong></li>
+                    <li><span>2025 </span><strong>SITCON </strong></li>
+                    <li><span>2025 起</span><strong>雲科網管小組</strong></li></ul>
+            </div>
+        </details>
+        <details class="explore-card"><summary><span class="card-icon" aria-hidden="true">◫</span><span class="card-heading"><small>PROJECTS</small><strong>做過的東西</strong><span>從遊戲、工具，到這個個人網站。</span></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
+            <div class="card-details">
+                <ul><li><span>Python / Tkinter</span><strong>踩地雷遊戲</strong></li>
+                    <li><span>Python / Discord API</span><strong>記帳機器人</strong></li>
+                    <li><span>HTML / CSS / JS</span><strong>個人網站</strong></li>
+                    <li><span>Godot</span><strong>蛙得法</strong></li>
+                    <li><span>FastAIP / Discord bot</span><strong>打卡機</strong></li>
+                </ul>
+                <a href="./project.html">前往專案櫃 ↗</a>
+            </div>
+        </details>
+        <details class="explore-card"><summary><span class="card-icon" aria-hidden="true">✳</span><span class="card-heading"><small>ABOUT THIS SITE</small><strong>正在更新中</strong><span>一個記錄學習、實驗想法的地方。</span></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
+            <div class="card-details">
+                <p>這個網站是我花一個寒假學習網頁製作的成果，也會隨著新的作品與想法慢慢改變。</p><a href="./blog.html">閱讀學習紀錄 ↗</a>
+            </div>
+        </details>
+      </div>
+    </section>
+    <footer class="about-footer"><span>© BoXen · still learning, still building.</span><a href="#hero-title">BACK TO TOP ↑</a></footer>
+  </main>
 </body>
-<script src="assets/js/nav.js"></script>
 </html>
