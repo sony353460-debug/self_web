@@ -1,0 +1,34 @@
+/*主內容區*/
+.container{
+    margin: 100px auto 0px auto;
+    max-width: 600px;
+    justify-content: center;
+}
+/*頭像與名字*/
+header{
+    height: auto;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+}
+header h1{
+    font-size: 40px;
+}
+header p{
+    font-size: 20px;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+}
+.entry{
+    margin-top: 50px;
+}
+.entry-container{
+    display: flex;
+    justify-content: space-between;
+}
+/*字體顏色*/
+.font-color{
+    color: #777777;
+}

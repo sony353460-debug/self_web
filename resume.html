@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/resume.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">    
+
+    <script src="assets/js/cat.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/window-drag.js" defer></script>
+    
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <script src="assets/js/theme.js"></script>
+    <title>Remuse</title>
+</head>
+<body class="main-body">
+    <nav class="custom-navbar" aria-label="主要導覽">
+        <div class="nav-container">
+            <div>
+                <a href="./index.html" class="nav-name">Boxen</a>
+            </div>
+            <div class="nav-menu">
+                <a href="./remuse.html" class="nav-item">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Remuse</span>
+                </a>
+                <a href="./blog.html" class="nav-item">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M14 10H8"/><path d="M14 14H8"/></svg>
+                    <span>Blog</span>
+                </a>
+                <a href="./project.html" class="nav-item">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon"><path d="M18 16l4-4-4-4"/><path d="M6 8l-4 4 4 4"/><path d="M14.5 4l-5 16"/></svg>
+                    <span>Project</span>
+                </a>
+            </div>
+            <button class="theme-toggle" type="button" aria-label="切換為淺色模式" aria-pressed="false">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/><circle cx="12" cy="12" r="4"/></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"/></svg>
+            </button>
+        </div>
+    </nav>
+    <main class="container">
+        <header class="entry">
+            <img src="./assets/images/avatar.png" class="avatar">
+            <div>
+                <h1>王柏勳</h1>
+                <p>軟體開發  |  持續學習  |  開源精神</p>
+            </div>
+        </header>
+        
+        <section class="entry">
+            <h2>簡介</h2>
+            <hr>
+            目前就讀雲林科技大學資管系，一位熱愛程式開發、技術探索與開源精神的學生。<br>
+            專注於 Python、後端開發與網頁技術，喜歡透過實際專案解決問題，並持續探索資訊安全、自動化與各種有趣的技術。
+            <hr>
+        </section>
+        
+        <section class="entry">
+            <h2>學歷</h2>
+            <hr>
+            <div>
+                <span>國立雲林科技大學資訊管理系</span>
+                <span>2025-Now</span>
+                <hr>
+            </div>
+        </section>
+
+        <section class="entry">
+            <h2>專案</h2>
+            <hr>
+            <div>
+                <div class="entry-container"><span>踩地雷</span><span class="font-color">more</span></div>
+                <p class="font-color">利用python的基本語法，寫出Flood Fill，並用Tikinter做出圖形化介面完成一個踩地雷。</p>
+                <hr>
+                <div class="entry-container"><span>Discord記帳機器人</span><span class="font-color">more</span></div>
+                <p class="font-color">利用Discord bot配合SQLite寫出可在伺服器完成記帳的機器人，有提供基本的CRUD外，還提供登入、圖表分析、目標預算這些功能。</p>
+                <hr>
+                <div class="entry-container"><span>SCIST Crypto CTF</span><span class="font-color">more</span></div>
+                <p class="font-color">透過 SCIST 密碼學課程，學習基礎加密原理與常見的密碼學演算法，並運用 Python 解決 CTF Crypto 題目，培養密碼分析、邏輯推理與問題解決能力。</p>
+                <hr>
+                <div class="entry-container"><span>蛙得法</span><span class="font-color">more</span></div>
+                <p class="font-color">跟數媒系分工，利用Godot一起完成一款遊戲。</p>
+                <hr>
+                <div class="entry-container"><span>個人網站</span><span class="font-color">more</span></div>
+                <p class="font-color">大一網管社課學習網頁三件套，期末完成一個屬於自己的網站，後來又花時間改寫添加自己的特色。</p>
+                <hr>
+                <div class="entry-container"><span>股票分析通知</span><span class="font-color">more</span></div>
+                <p class="font-color">從頭學習panda，並幫高中老師定期抓取網路上上市、上櫃的資料，將它整理成所需要的資訊，進行分析後發送符合策略的資訊。</p>
+                <hr>
+                <div class="entry-container"><span>打卡機</span><span class="font-color">more</span></div>
+                <p class="font-color">重構網管值班打卡機，主要負責Discord打卡通知語調班的功能。</p>
+            </div>
+            <hr>
+        </section>
+        
+        <section class="entry">
+            <h2>社群</h2>
+            <hr>
+            <div class="entry-container">
+                <span>南附資研社</span>
+                <span>2024-2025</span>
+            </div>
+            <hr>
+            <div class="entry-container">
+                <span>SCIST S6 學員</span>
+                <span>2024-2025</span>
+            </div>
+            <hr>
+            <div class="entry-container">
+                <span>SITCON</span>
+                <span>2025</span>
+            </div>
+            <hr>
+            <div class="entry-container">
+                <span>雲科網管</span>
+                <span>2025-Now</span>
+            </div>
+            <hr>
+            <div class="entry-container">
+                <span>THJCC CTF</span>
+                <span>2026</span>
+            </div>
+            <hr>
+        </section>
+        
+        <section class="entry">
+            <h2>技能</h2>
+            <hr>
+            <div>
+                <span>開發：</span>網站、小工具、Discord bot<br><hr>
+                <span>領域：</span>爬蟲、數據分析<br>
+            </div>
+            <hr>
+        </section>
+    </main>
+
+</body>
+</html>
