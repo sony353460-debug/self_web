@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded",function(){
+    const cat = document.querySelector(".container-cat");
+    const eyes = document.querySelector(".cat_base_eyes");
+    const body = document.querySelector(".cat_base_body");
+    const down = document.querySelector(".cat_look_down");
+    const petted = document.querySelector(".cat_petted");
+    if (!cat || !eyes || !body || !down || !petted) return;
 
 
     window.addEventListener("mousemove",function(event){
-        const eyes = document.querySelector(".cat_base_eyes");
 
         // 1. 取得眼珠目前在螢幕上的位置
         const rect = eyes.getBoundingClientRect();
@@ -27,33 +32,19 @@ document.addEventListener("DOMContentLoaded",function(){
 
         eyes.style.transform=`translate(${x}px,${y}px)`;
     });
-    const cat = document.querySelector(".container-cat");
     cat.addEventListener("mouseenter",function(){
-        const body = document.querySelector(".cat_base_body");
-        const eyes = document.querySelector(".cat_base_eyes");
-        const down = document.querySelector(".cat_look_down");
-
         body.style.opacity="0";
         eyes.style.opacity="0";
         down.style.opacity="1";
     })
 
     cat.addEventListener("mouseleave",function(){
-        const body = document.querySelector(".cat_base_body");
-        const eyes = document.querySelector(".cat_base_eyes");
-        const down = document.querySelector(".cat_look_down");
-
         body.style.opacity="1";
         eyes.style.opacity="1";
         down.style.opacity="0";
     })
 
     cat.addEventListener("mousedown",function(){
-        const body = document.querySelector(".cat_base_body");
-        const eyes = document.querySelector(".cat_base_eyes");
-        const down = document.querySelector(".cat_look_down");
-        const petted = document.querySelector(".cat_petted");
-
         body.style.opacity="0";
         eyes.style.opacity="0";
         down.style.opacity="0";
@@ -61,11 +52,6 @@ document.addEventListener("DOMContentLoaded",function(){
     })
 
     cat.addEventListener("mouseup",function(){
-        const body = document.querySelector(".cat_base_body");
-        const eyes = document.querySelector(".cat_base_eyes");
-        const down = document.querySelector(".cat_look_down");
-        const petted = document.querySelector(".cat_petted");
-        
         body.style.opacity="0";
         eyes.style.opacity="0";
         down.style.opacity="1";
