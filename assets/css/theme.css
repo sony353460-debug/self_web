@@ -96,6 +96,9 @@
     outline-offset: 3px;
 }
 
+
+
+/*亮色主題*/
 html[data-theme='light'] .theme-toggle {
     background: #dcecff;
     color: #c77a12;
