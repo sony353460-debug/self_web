@@ -1,18 +1,8 @@
-.nav-container {
-    gap: 20px;
-    padding-inline: 20px;
-}
-
 .custom-navbar {
-    opacity: 1;
     background: rgba(17, 27, 43, .72);
     border-bottom: 1px solid rgba(190, 220, 245, .12);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-}
-
-.nav-menu {
-    gap: clamp(12px, 3vw, 50px);
 }
 
 .theme-toggle {
@@ -34,8 +24,6 @@
 }
 
 .main-body {
-    min-height: 100vh;
-    max-height: none;
     background-color: #111d2d;
     background-image:
         /* A sparse star field, with a few softer blue stars. */
@@ -137,115 +125,7 @@ html[data-theme='light'] .nav-item {
     color: #243348;
 }
 
-/* Keep the home page terminal readable against the daytime sky. */
-html[data-theme='light'] .social-window {
-    background: #f9fcff;
-    border-color: #aac7dd;
-    color: #293f56;
-    box-shadow: 0 20px 45px rgba(66, 105, 139, .2);
-}
-
-html[data-theme='light'] .window-titlebar {
-    background: #e6f2fa;
-    border-bottom: 1px solid #d0e2ef;
-    color: #284c69;
-}
-
-html[data-theme='light'] .window-controls span:last-child:hover {
-    color: #fff;
-}
-
-html[data-theme='light'] .window-content .line {
-    color: #8199ac;
-}
-
-html[data-theme='light'] .social-links {
-    background: #f2f8fc;
-    color: #314a61;
-}
-
-html[data-theme='light'] .terminal-tabs {
-    background: #eaf4fa;
-    border-color: #d1e3ef;
-    color: #47647c;
-}
-
-html[data-theme='light'] .terminal-tab {
-    border-bottom-color: #3182b5;
-}
-
-html[data-theme='light'] .terminal-shell,
-html[data-theme='light'] .terminal-arrow {
-    color: #6d879b;
-}
-
-html[data-theme='light'] .terminal-path,
-html[data-theme='light'] .terminal-cursor-line {
-    color: #326b94;
-}
-
-html[data-theme='light'] .container-link {
-    color: #315d79;
-}
-
-html[data-theme='light'] .container-link:hover,
-html[data-theme='light'] .container-link:focus-visible {
-    background: #dceefa;
-    color: #174b70;
-}
-
-html[data-theme='light'] .terminal-prompt {
-    color: #188780;
-}
-
-html[data-theme='light'] .terminal-cursor {
-    background: #54768f;
-}
-
-html[data-theme='light'] .container-title {
-    text-shadow: 0 0 18px rgba(46, 154, 254, .22);
-}
-
-html[data-theme='light'] .container-content {
-    color: #43566e;
-}
-
-html[data-theme='light'] .container-content .line {
-    color: #667d92;
-}
-
-html[data-theme='light'] .page-divider,
-html[data-theme='light'] hr[style*='background-color: white'] {
-    background-color: #abc7df !important;
-}
-
-html[data-theme='light'] .blog-recommend a,
-html[data-theme='light'] .post,
-html[data-theme='light'] .page-title {
-    color: #243348;
-}
-
-html[data-theme='light'] .post,
-html[data-theme='light'] .project-card,
-html[data-theme='light'] .contact-container form {
-    background: #fff;
-    border-color: #c6d9ed;
-    box-shadow: 0 8px 26px rgba(45, 80, 120, .1);
-}
-
-html[data-theme='light'] .input-group input,
-html[data-theme='light'] .input-group textarea {
-    background: #f7faff;
-    border-color: #a9bfd4;
-    color: #243348;
-}
-
 @media (max-width: 760px) {
-    .nav-container { gap: 10px; padding-inline: 12px; }
-    .nav-name { font-size: 24px; }
-    .nav-menu { gap: 10px; }
-    .nav-item { font-size: 0; }
-    .nav-icon { width: 22px; height: 22px; }
     .theme-toggle { width: 62px; }
     html[data-theme='light'] .theme-toggle::after { transform: translateX(24px); }
 }

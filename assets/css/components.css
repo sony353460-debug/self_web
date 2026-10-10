@@ -1,0 +1,18 @@
+/* Blog 與 Project 共用的標籤。 */
+.post-tag,
+.tag {
+    padding: 4px 12px;
+    border-radius: 15px;
+    background: var(--accent);
+    color: white;
+    font-size: 12px;
+}
+
+/* 多頁卡片共用的亮色表面。 */
+html[data-theme='light'] .post,
+html[data-theme='light'] .project-card,
+html[data-theme='light'] .contact-container form {
+    background: #fff;
+    border-color: #c6d9ed;
+    box-shadow: 0 8px 26px rgba(45, 80, 120, .1);
+}

@@ -72,7 +72,7 @@
 }
 .post:hover{
     transform: translateX(10px);
-    border-color: #2E9AFE;
+    border-color: var(--accent);
 }
 .post-image img{
     width: 200px;
@@ -98,10 +98,7 @@
     gap: 10px;
 }
 
-.post-tag {
-    background: #2E9AFE;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 15px;
-    font-size: 12px;
+html[data-theme='light'] .blog-recommend a,
+html[data-theme='light'] .post {
+    color: #243348;
 }

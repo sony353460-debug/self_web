@@ -1,11 +1,11 @@
 # 個人網站整理清單
 
-> 檢查日期：2026-10-11。P1 已完成；清單中的勾選狀態反映目前進度。網站目前是純 HTML、CSS、JavaScript 多頁專案；現階段不需要為了整理架構而導入框架或建置工具。
+> 檢查日期：2026-10-11。P1、P2 已完成；清單中的勾選狀態反映目前進度。網站目前是純 HTML、CSS、JavaScript 多頁專案；現階段不需要為了整理架構而導入框架或建置工具。
 
 ## 目前結構
 
 - 根目錄：`index.html`、`about.html`、`resume.html`、`blog.html`、`project.html`、`contact.html`。
-- `assets/css/`：共用樣式與各頁樣式混放。
+- `assets/css/`：`base.css` 管全站基礎設定與共用色彩，`nav.css` 管導覽排版，`components.css` 管共用元件，`theme.css` 管全站深淺主題；其餘 CSS 管各頁樣式。
 - `assets/js/`：全站功能（導覽、主題）與頁面互動（About、貓咪、視窗拖曳）。
 - `assets/images/`：所有圖片集中放置。
 - `README.md`：目前只有專案名稱。
@@ -26,11 +26,11 @@
 
 ## P2：整理樣式與資源
 
-- [ ] **保留頁面專屬 CSS，抽出真正共用的規則。** 可規劃 `base.css`（全站基本設定、字體、設計變數）、`nav.css`（導覽）、`theme.css`（主題）、`components.css`（重複元件），並保留 `index.css`、`about.css` 等頁面檔。無須合併成一個大型 CSS。
-- [ ] **釐清 `nav.css` 與 `theme.css` 的責任。** 目前兩檔都設定 `.main-body` 和導覽列。把全站背景／基本設定、導覽結構、深淺主題分開，避免靠載入順序覆蓋舊規則。
-- [ ] **抽出重複元件。** `blog.css` 的 `.post-tag` 與 `project.css` 的 `.tag` 幾乎相同，可統一成共用標籤樣式；只在多頁確實共用時才抽出。
-- [ ] **確認未使用的 CSS。** `web_style.css` 目前沒有被 HTML 引用。先確認是否仍有用途，再決定整合、保留說明或移除。
-- [ ] **檢查圖片引用與用途。** `assets/images/` 現在集中存放即可；若日後圖片顯著增加，再依用途分子資料夾。搬動前先搜尋所有 HTML／CSS 引用，避免圖片失效。
+- [x] **保留頁面專屬 CSS，抽出真正共用的規則。** 新增 `base.css`、`components.css`；各頁繼續使用自己的 CSS，原有字體引用維持在需要的頁面。
+- [x] **釐清 `nav.css` 與 `theme.css` 的責任。** 全站盒模型與基本文字設定移到 `base.css`；導覽排版留在 `nav.css`；全站深淺背景與導覽配色留在 `theme.css`。首頁、Blog、Project、Contact 的亮色細節移回各頁或共用元件檔。
+- [x] **抽出重複元件。** Blog 的 `.post-tag`、Project 的 `.tag` 共用 `components.css` 的標籤樣式；幾個頁面共用的亮色卡片表面也集中於此。
+- [x] **確認未使用的 CSS。** `web_style.css` 沒有被 HTML 或其他 CSS 引用，且其內容是舊版重複設定，已移除。
+- [x] **檢查圖片引用與用途。** 現有 HTML 的圖片路徑均指向存在的檔案。`cat_base.png`、`cat_look_up.png`、`index_background.png` 沒有使用中的引用；貓咪其他圖片僅在註解區塊中。圖片目前仍集中放在 `assets/images/`，未搬動或刪除，以保留之後使用的選擇。
 
 ## P3：補上專案文件與驗收
 
@@ -41,5 +41,4 @@
 ## 建議執行順序
 
 1. 決定 Contact 和 Blog 未完成內容的呈現方式。
-2. 整理共用 CSS 與頁面 CSS，最後清理未使用資源。
-3. 更新 README，逐頁檢查桌面與手機版。
+2. 更新 README，逐頁檢查桌面與手機版。

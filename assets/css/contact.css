@@ -36,7 +36,7 @@
 .submit-btn {
     width: 100%;
     padding: 15px;
-    background: #2E9AFE;
+    background: var(--accent);
     color: white;
     border: none;
     border-radius: 8px;
@@ -64,4 +64,11 @@
     width: 900px;
     height: 900px;
     object-fit: fill;
+}
+
+html[data-theme='light'] .input-group input,
+html[data-theme='light'] .input-group textarea {
+    background: #f7faff;
+    border-color: #a9bfd4;
+    color: #243348;
 }

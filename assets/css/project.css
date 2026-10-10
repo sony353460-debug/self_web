@@ -28,7 +28,7 @@
 
 .project-card:hover {
     transform: translateY(-10px);
-    border-color: #2E9AFE;
+    border-color: var(--accent);
 }
 
 .project-image img {
@@ -47,17 +47,13 @@
     gap: 10px;
 }
 
-.tag {
-    background: #2E9AFE;
-    color: white;
-    padding: 4px 12px;
-    border-radius: 15px;
-    font-size: 12px;
-}
-
 .project-link {
     margin-top: 10px;
-    color: #2E9AFE;
+    color: var(--accent);
     text-decoration: none;
     font-weight: bold;
+}
+
+html[data-theme='light'] .page-title {
+    color: #243348;
 }
