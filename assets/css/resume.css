@@ -8,26 +8,68 @@
 header{
     height: auto;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     display: flex;
 }
 header h1{
     font-size: 40px;
 }
-header p{
-    font-size: 20px;
+p{
+    font-size: 12px;
 }
 .avatar{
     width: 150px;
     height: 150px;
 }
+/*各個區塊*/
 .entry{
     margin-bottom: 50px;
+}
+.entry-title{
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    align-items: center;
+}
+.entry-title::before{
+    content: "◆";
+    font-size: 18px;
+}
+.entry-title::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #c7ceca;
 }
 .entry-container{
     display: flex;
     justify-content: space-between;
 }
+.entry-project{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.entry-project::before{
+    content: "▸";
+    font-size: 14px;
+}
+.entry-content{
+    font-size: 12px;
+}
+.entry-community{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.entry-community::before{
+    content: "•";
+    font-size: 12px;
+}
+
+
+
+
 /*字體顏色*/
 .font-color{
     color: #777777;
